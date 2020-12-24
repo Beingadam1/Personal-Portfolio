@@ -1,0 +1,195 @@
+// Widescreen
+@include mediaXl {
+  #home {
+    display: flex !important;
+    justify-content: space-around;
+    #img {
+      padding-top: 7%;
+    }
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &-info {
+      ul {
+        font-size: 1rem;
+      }
+      border-bottom: none !important;
+      border-right: darken($primary-color, 1) solid 1px;
+    }
+  }
+
+  #work {
+    .project {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+
+      .item {
+        div {
+          .acc {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktops & Laptops
+@include mediaLg {
+  #home {
+    #img {
+      display: none;
+    }
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &-info {
+      ul {
+        font-size: 0.85rem;
+      }
+      border-bottom: none !important;
+      border-right: darken($primary-color, 1) solid 1px;
+    }
+  }
+
+  #work {
+    .project {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .item {
+        div {
+          .acc {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+  #home {
+    #img {
+      display: none;
+    }
+  }
+
+  main {
+    text-align: center;
+    align-items: center;
+
+    .lg-heading {
+      margin-bottom: 1rem;
+      line-height: 1;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      width: 150px;
+      height: 150px;
+      background: url("../img/portrait-small.jpg") center center/cover;
+    }
+  }
+
+  .about-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+
+  #work {
+    .project {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  main#home h1 {
+    margin-top: 10vh !important;
+    font-size: 3rem;
+  }
+  #work {
+    .project {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// @media (min-width: 1050px) {
+//   #work {
+//     .project {
+//       display: grid;
+//       grid-template-columns: repeat(5, 1fr);
+//     }
+//   }
+// }
+// @media (min-width: 1070px) {
+//   #work {
+//     .project {
+//       display: grid;
+//       grid-template-columns: repeat(7, 1fr);
+//     }
+//   }
+// }
+
+// @media (min-width: 355px) and (max-width: 376px) {
+//   #work {
+//     .project {
+//       .item {
+//         div {
+//           img {
+//             width: 240px !important;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// @media (min-width: 405px) and (max-width: 500px) {
+//   .project {
+//     .item {
+//       div {
+//         img {
+//           width: 350px !important;
+//         }
+//       }
+//     }
+//   }
+// }

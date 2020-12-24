@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f3336a2f41.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>My Work</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="toggle">
+        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item current">
+            <a href="work.html" class="nav-link">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Get In Touch</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="work">
+      <h1 class="lg-heading">My <span class="text-secondary">Work</span></h1>
+      <h2 class="sm-heading">Have a look at some of my project...</h2>
+      <div class="project">
+        <div class="item">
+          <div>
+            <img src="/dist/img/project1.png" alt="project" />
+            <div class="panel">
+              <p>Legend Barber website is a male saloon website template.</p>
+              <p class="stack">
+                <span class="text-secondary">Stack :</span>
+                <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+              </p>
+              <a
+                href="https://legend-barber.netlify.app"
+                target="_blank"
+                class="btn-light"
+                >Project</a
+              >
+              <a
+                href="https://github.com/Beingadam1/Legend-Barber-Website"
+                target="_blank"
+                class="btn-primary"
+                >Github Repo</a
+              >
+            </div>
+            <div class="acc">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <img src="/dist/img/project2.png" alt="project" />
+            <div class="panel">
+              <p>
+                A Photographer portfolio website, inspired by a UI design.
+              </p>
+              <p class="stack">
+                <span class="text-secondary">Stack :</span>
+                <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
+              </p>
+              <a
+                href="https://johnmedia.netlify.app"
+                target="_blank"
+                class="btn-light"
+                >Project</a
+              >
+              <a
+                href="https://github.com/Beingadam1/Photographer-website"
+                target="_blank"
+                class="btn-primary"
+                >Github Repo</a
+              >
+            </div>
+            <div class="acc">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <img src="/dist/img/project3.png" alt="project" />
+            <div class="panel">
+              <p>A web developer portfolio website for Babatunde Adam.</p>
+              <p class="stack">
+                <span class="text-secondary">Stack :</span>
+                <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+              </p>
+              <a href="#" target="_blank" class="btn-light">Project</a>
+              <a href="#" target="_blank" class="btn-primary">Github Repo</a>
+            </div>
+            <div class="acc">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button style="display: none" class="btn-secondary sent">SEND</button>
+    </main>
+
+    <footer id="main-footer">
+      <p>Copyright &copy; <span id="year"></span>.&nbsp; All Right Reserved.</p>
+    </footer>
+
+    <script src="/dist/js/main.js"></script>
+  </body>
+</html>

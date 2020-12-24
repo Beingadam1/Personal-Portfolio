@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f3336a2f41.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>About Me</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="toggle">
+        <input type="checkbox" name="checkbox" id="checkbox" class="checkbox" />
+        <label for="checkbox" class="label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item current">
+            <a href="about.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Get In Touch</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="about">
+      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
+      <h2 class="sm-heading">Let me tell you a little about me...</h2>
+      <div class="about-info">
+        <img src="/dist/img/portrait.jpg" alt="Adam" class="bio-img" />
+        <div class="bio">
+          <h3 class="text-secondary">BIO</h3>
+          <p>
+            I'm Adam, a front-end developer based in Nigeria. I am fascinated by
+            technology, how it works, how it is created and how it is use to
+            solve problems.
+          </p>
+          <p>
+            Babatunde Adam always romanticise about building things with
+            technology especially web related. With any opportunity he has, he
+            care more about making human life easier and increase its
+            productivity with technology in a least amount of time.
+          </p>
+        </div>
+      </div>
+      <h3>My<span class="text-secondary"> Toolbox</span></h3>
+      <div class="progress"></div>
+      <div class="tools">
+        <div class="card">
+          <img src="/dist/img/html.png" alt="" />
+          <h3>HTML5</h3>
+        </div>
+        <div class="card">
+          <img src="/dist/img/css.png" alt="" />
+          <h3>CSS3</h3>
+        </div>
+        <div class="card">
+          <img src="/dist/img/javascript.svg" alt="" />
+          <h3>JS</h3>
+        </div>
+        <div class="card">
+          <img src="/dist/img/sass.svg" alt="" />
+          <h3>SASS</h3>
+        </div>
+        <div class="card">
+          <img src="/dist/img/bootstrap.png" alt="" />
+          <h3>BS</h3>
+        </div>
+        <div class="card">
+          <img src="/dist/img/versioncontrol.svg" alt="" />
+          <h3>GIT</h3>
+        </div>
+        <div class="card">
+          <img src="/dist/img/responsive.svg" alt="" />
+          <h3>RD</h3>
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      <p>Copyright &copy; <span id="year"></span>.&nbsp; All Right Reserved.</p>
+    </footer>
+
+    <script src="/dist/js/main.js"></script>
+  </body>
+</html>
