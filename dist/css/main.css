@@ -454,7 +454,7 @@ main {
     display: flex !important;
     justify-content: space-around; }
     #home #img {
-      padding-top: 7%; }
+      padding-top: 8%; }
   .contact {
     display: grid;
     grid-template-columns: 1fr 2fr; }
@@ -487,6 +487,8 @@ main {
       text-align: center; } }
 
 @media screen and (max-width: 768px) {
+  #preloader {
+    width: 75%; }
   #home #img {
     display: none; }
   main {

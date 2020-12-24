@@ -5,8 +5,6 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
-const marker = document.querySelector("#marker");
-const navLinks = document.querySelectorAll(".nav-link");
 
 // Get current Year
 currentYear.innerHTML = new Date().getFullYear();
@@ -37,18 +35,6 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-
-// Magic Indicator for Nav links
-function indicator(e) {
-  marker.style.top = e.offsetTop+"px";
-  marker.style.width = e.offsetWidth+"px";
-}
-
-navLinks.forEach(link => {
-  link.addEventListener("mousemove", (e) => {
-    indicator(e.target);
-  })
-})
 
 // Light Mode Toggle
 const checkbox = document.getElementById("checkbox");
@@ -102,8 +88,8 @@ const header = document.querySelector("header");
 
 function init() {
   setTimeout(() => {
-    loader.style.opacity = 0;
     loader.style.display = "none";
+    loader.style.opacity = 0;
 
     main.style.display = "block";
     header.style.display = "block";

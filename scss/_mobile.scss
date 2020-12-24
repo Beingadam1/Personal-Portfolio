@@ -4,7 +4,7 @@
     display: flex !important;
     justify-content: space-around;
     #img {
-      padding-top: 7%;
+      padding-top: 8%;
     }
   }
 
@@ -76,6 +76,10 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
+  #preloader {
+    width: 75%;
+  }
+
   #home {
     #img {
       display: none;
