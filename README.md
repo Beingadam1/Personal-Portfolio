@@ -1,2 +1,2 @@
 # Personal-Portfolio
-Babatunde adam personal web developer webiste 
+Babatunde Adam personal web developer webiste 
