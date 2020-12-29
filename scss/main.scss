@@ -373,7 +373,7 @@ main {
 // Contact
 #contact {
   .contact {
-    box-shadow: 0 0 10px 0 rgba(darken($primary-color, 5), 1);
+    box-shadow: 0 0 5px 0 rgba(darken($primary-color, 5), 1);
 
     &-info {
       text-align: center;
@@ -387,6 +387,10 @@ main {
         to {
           transform: translateY(0);
         }
+      }
+
+      h2 {
+        font-size: 1.5rem;
       }
 
       ul {
@@ -413,7 +417,7 @@ main {
 
       h3 {
         font-weight: 500;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         margin-bottom: 0.5rem;
       }
 
@@ -429,7 +433,7 @@ main {
             display: block;
             text-align: left;
             margin-bottom: 0.1rem;
-            // color: $primary-color !important;
+            font-weight: 500;
           }
 
           input {
