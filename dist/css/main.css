@@ -409,13 +409,13 @@ main {
     color: #000;
     border: none;
     padding: 1rem;
-    transform: translate3d(130%, 0, 0);
-    animation: slideLeft 1.5s forwards ease-out 0.5s;
+    transform: translateY(1200px);
+    animation: slidebottom 1.5s forwards ease-out;
     transition: all 0.5s ease-out; }
 
-@keyframes slideLeft {
+@keyframes slidebottom {
   to {
-    transform: translate3d(0, 0, 0); } }
+    transform: translateY(0); } }
     #contact .contact-form h3 {
       font-weight: 500;
       font-size: 1.5rem;

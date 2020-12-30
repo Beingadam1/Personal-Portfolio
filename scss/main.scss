@@ -405,13 +405,13 @@ main {
       color: set-text-color($light-color);
       border: none;
       padding: 1rem;
-      transform: translate3d(130%, 0, 0);
-      animation: slideLeft 1.5s forwards ease-out 0.5s;
+      transform: translateY(1200px);
+      animation: slidebottom 1.5s forwards ease-out;
       @include easeOut;
 
-      @keyframes slideLeft {
+      @keyframes slidebottom {
         to {
-          transform: translate3d(0, 0, 0);
+          transform: translateY(0);
         }
       }
 
