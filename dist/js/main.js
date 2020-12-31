@@ -93,9 +93,11 @@ function init() {
 
     main.style.display = "block";
     header.style.display = "block";
-    setTimeout(() => (main.style.opacity = 1, header.style.opacity = 1), 60);
+    setTimeout(
+      () => ((main.style.opacity = 1), (header.style.opacity = 1)),
+      60
+    );
   }, 5000);
-
 }
 
 init();

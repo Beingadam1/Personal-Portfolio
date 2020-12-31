@@ -447,6 +447,77 @@ main {
       margin-top: 0.5rem;
       border: none; }
 
+.cover {
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem 0.5rem;
+  border-radius: 10px;
+  text-align: left; }
+  .cover #svg {
+    margin-bottom: 0.75rem;
+    animation: page-fill 0.5s ease forwards 1.5s; }
+    .cover #svg path:nth-child(1) {
+      stroke-dasharray: 196.5px;
+      stroke-dashoffset: 196.5px;
+      animation: page-anim 1s ease forwards; }
+    .cover #svg path:nth-child(2) {
+      stroke-dasharray: 249.2px;
+      stroke-dashoffset: 249.2px;
+      animation: page-anim 1s ease forwards 0.1s; }
+    .cover #svg path:nth-child(3) {
+      stroke-dasharray: 189.7px;
+      stroke-dashoffset: 189.7px;
+      animation: page-anim 1s ease forwards 0.2s; }
+    .cover #svg path:nth-child(4) {
+      stroke-dasharray: 189.7px;
+      stroke-dashoffset: 189.7px;
+      animation: page-anim 1s ease forwards 0.3s; }
+    .cover #svg path:nth-child(5) {
+      stroke-dasharray: 207.5px;
+      stroke-dashoffset: 207.5px;
+      animation: page-anim 1s ease forwards 0.4s; }
+    .cover #svg path:nth-child(6) {
+      stroke-dasharray: 196.5px;
+      stroke-dashoffset: 196.5px;
+      animation: page-anim 1s ease forwards 0.5s; }
+    .cover #svg path:nth-child(7) {
+      stroke-dasharray: 196.5px;
+      stroke-dashoffset: 196.5px;
+      animation: page-anim 1s ease forwards 0.6s; }
+    .cover #svg path:nth-child(8) {
+      stroke-dasharray: 176.8px;
+      stroke-dashoffset: 176.8px;
+      animation: page-anim 1s ease forwards 0.7s; }
+    .cover #svg path:nth-child(9) {
+      stroke-dasharray: 249.5px;
+      stroke-dashoffset: 249.5px;
+      animation: page-anim 1s ease forwards 0.8s; }
+    .cover #svg path:nth-child(10) {
+      stroke-dasharray: 150.8px;
+      stroke-dashoffset: 150.8px;
+      animation: page-anim 1s ease forwards 0.9s; }
+
+@keyframes page-anim {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes page-fill {
+  from {
+    fill: transparent; }
+  to {
+    fill: #e61c5d; } }
+  .cover a {
+    color: #e61c5d; }
+    .cover a:hover {
+      color: #ba154a; }
+  .cover p {
+    margin-bottom: 1rem;
+    color: #000;
+    font-size: 1rem; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
